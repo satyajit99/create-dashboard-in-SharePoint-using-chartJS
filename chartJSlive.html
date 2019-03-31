@@ -126,54 +126,7 @@
     }
 
 
-    function GenerateChart(){
-    myLabels = ['Nile', 'Amazon', 'Yangtze', 'Mississippi', 'Yenisei'];
-    myData = [6650 , 6400 , 6300 , 6275 , 5539];
-
-    var ctx = document.getElementById('myChartContainer').getContext('2d');
-    var myChart = new Chart(ctx, {
-    type:'bar', // bar, horizontalBar, pie , line, doughnut, radar, polarArea
-    data:{
-        labels: myLabels,
-        datasets:[{
-        label:'Length of River',
-        data: myData,
-        backgroundColor: ['green', 'red', 'blue', 'purple', 'black'],
-        borderWidth:1,
-        borderColor:'black',
-        hoverBorderWidth:3,
-        hoverBorderColor:'black',
-        }]
-    },
-    options:{
-        maintainAspectRatio: true,
-        title:{
-            display:true,
-            text:'Top 5 rivers of the world!',
-            fontSize:20
-        },
-        legend:{
-            display:true,
-            position:'right',
-            labels:{
-                    fontColor:'#000',
-                }
-        },
-        tooltips:{
-            enabled:true
-            }
-        }
-    });
-    }
-
-
-
-
-    </script>
-
-
-
-
+   </script>
 </head>
 <body>
     <br><br>
